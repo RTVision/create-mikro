@@ -1,0 +1,52 @@
+{
+  "name": "@rtvision/{packageName}",
+  "version": "0.0.0",
+  "author": "Kalven Schraut <kalvens@rtvision.com>",
+  "type": "module",
+  "scripts": {
+    "add-schema": "NODE_OPTIONS='--loader @bleed-believer/path-alias/esm' pnpm dotenv -c development -- pnpm mikro-orm schema:create -r --fk-checks",
+    "build": "vite build && tsc --emitDeclarationOnly -p tsconfig.build.json",
+    "clean": "rm -rf dist/*",
+    "dev": "pnpm clean && vite",
+    "generate-metadata": "NODE_OPTIONS='--loader @bleed-believer/path-alias/esm' pnpm dotenv -c development -- pnpm mikro-orm cache:generate",
+    "lint": "eslint ./src/",
+    "lint-fix": "eslint ./src/ --fix",
+    "migrate": "NODE_OPTIONS='--loader @bleed-believer/path-alias/esm' dotenv -c development -- pnpm mikro-orm migration:up",
+    "migrate-create": "NODE_OPTIONS='--loader @bleed-believer/path-alias/esm' dotenv -c development -- pnpm mikro-orm migration:create",
+    "test": "pnpm dotenv -c development -- vitest run --reporter junit --outputFile reports/unit.xml --reporter default",
+    "test-dev": "pnpm dotenv -c development -- vitest",
+    "type-check": "tsc --no-emit",
+    "up-schema": "NODE_OPTIONS='--loader @bleed-believer/path-alias/esm' dotenv -c development -- pnpm mikro-orm schema:update -r --fk-checks"
+  },
+  "dependencies": {
+    "pm2": "^5.2.2"
+  },
+  "devDependencies": {
+    "@bleed-believer/path-alias": "^0.10.17",
+    "@fastify/type-provider-json-schema-to-ts": "^2.1.1",
+    "@mikro-orm/cli": "^5.4.2",
+    "@mikro-orm/core": "^5.4.2",
+    "@mikro-orm/migrations": "^5.4.2",
+    "@mikro-orm/postgresql": "^5.4.2",
+    "@mikro-orm/reflection": "^5.4.2",
+    "@types/node": "^18.8.5",
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^6.0.0",
+    "fast-copy": "^3.0.0",
+    "fastify": "^4.8.1",
+    "fastify-plugin": "^4.2.1",
+    "json-schema-to-ts": "^2.5.5",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8",
+    "vite-plugin-node": "^1.0.0"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/MikroOrm.config.ts",
+      "./dist/MikroOrm.config.js"
+    ]
+  }
+}

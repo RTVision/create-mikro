@@ -1,0 +1,159 @@
+{
+  "data": {
+    "propertyOrder": {},
+    "properties": {
+      "id": {
+        "name": "id",
+        "reference": "scalar",
+        "primary": true,
+        "type": "number"
+      },
+      "title": {
+        "name": "title",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      "url": {
+        "name": "url",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      "imgSmall": {
+        "name": "imgSmall",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      "imgMedium": {
+        "name": "imgMedium",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      "imgLarge": {
+        "name": "imgLarge",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      "active": {
+        "name": "active",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "boolean"
+      },
+      "placement": {
+        "name": "placement",
+        "reference": "scalar",
+        "enum": true,
+        "type": "AdPlacement",
+        "items": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    "props": [
+      {
+        "name": "id",
+        "reference": "scalar",
+        "primary": true,
+        "type": "number"
+      },
+      {
+        "name": "title",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      {
+        "name": "url",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      {
+        "name": "imgSmall",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      {
+        "name": "imgMedium",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      {
+        "name": "imgLarge",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "string",
+        "optional": true
+      },
+      {
+        "name": "active",
+        "reference": "scalar",
+        "getter": false,
+        "setter": false,
+        "type": "boolean"
+      },
+      {
+        "name": "placement",
+        "reference": "scalar",
+        "enum": true,
+        "type": "AdPlacement",
+        "items": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "primaryKeys": [
+      "id"
+    ],
+    "filters": {},
+    "hooks": {},
+    "indexes": [],
+    "uniques": [],
+    "checks": [],
+    "concurrencyCheckKeys": {},
+    "className": "Ad",
+    "path": "./src/models/connex/Ad.ts",
+    "name": "Ad",
+    "abstract": false,
+    "constructorParams": [],
+    "toJsonParams": [],
+    "useCache": true,
+    "compositePK": false,
+    "relations": [],
+    "collection": "ad"
+  },
+  "origin": "./src/models/connex/Ad.ts",
+  "hash": "6fb4a7e22af002fb922d270c04da1a1e",
+  "version": "5.4.2"
+}

@@ -1,43 +1,13 @@
 {
-  "name": "@rtvision/bidvault-api",
+  "name": "@rtvision/create-mikro",
   "version": "0.0.0",
   "author": "Kalven Schraut <kalvens@rtvision.com>",
-  "contributors": [
-    "Jeff Fox <jefff@rtvision.com>",
-    "Josh Johnson <joshj@rtvision.com>",
-    "Kevin Trettel <kevint@rtvision.com>",
-    "Matt Adams <matta@rtvision.com>"
-  ],
   "type": "module",
-  "scripts": {
-    "build": "vite build",
-    "clean": "rm -rf dist/*",
-    "dev": "pnpm clean && vite",
-    "lint": "eslint ./src/",
-    "lint-fix": "eslint ./src/ --fix",
-    "type-check": "tsc --no-emit"
+  "bin": {
+    "@rtvision/create-mikro": "bin/create-mikro.js"
   },
   "dependencies": {
-    "pm2": "^5.2.0"
-  },
-  "devDependencies": {
-    "@fastify/type-provider-json-schema-to-ts": "^2.1.1",
-    "@mikro-orm/core": "^5.4.2",
-    "@mikro-orm/postgresql": "^5.4.2",
-    "@mikro-orm/reflection": "^5.4.2",
-    "@types/node": "^18.7.18",
-    "dotenv": "^16.0.2",
-    "fastify": "^4.5.3",
-    "json-schema-to-ts": "^2.5.5",
-    "tslib": "^2.4.0",
-    "vite": "^3.0.9",
-    "vite-plugin-node": "^1.0.0"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "vite": "3"
-      }
-    }
+    "chalk": "^5.1.2",
+    "fs-extra": "^10.1.0"
   }
 }

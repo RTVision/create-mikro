@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDirs": ["src"],
+    "skipLibCheck": true,
+    "typeRoots": [
+      "src/types",
+      "./node_modules/@types",
+      "./node_modules/@rtvision/types/dist"
+    ],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*"]
+}
