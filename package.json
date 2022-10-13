@@ -1,10 +1,10 @@
 {
-  "name": "@rtvision/create-mikro",
+  "name": "create-rtvision-mikro",
   "version": "0.0.1",
   "author": "Kalven Schraut <kalvens@rtvision.com>",
   "type": "module",
   "bin": {
-    "@rtvision/create-mikro": "bin/create-mikro.js"
+    "create-rtvision-mikro": "bin/create-mikro.js"
   },
   "dependencies": {
     "chalk": "^5.1.2",
