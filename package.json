@@ -1,6 +1,6 @@
 {
   "name": "create-rtvision-mikro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Kalven Schraut <kalvens@rtvision.com>",
   "type": "module",
   "bin": {

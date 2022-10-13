@@ -20,7 +20,7 @@ function log(chalkFunction, msg) {
 
 if (typeof projectName !== 'string' || projectName.length === 0) {
 	log(
-		red,
+		'red',
 		'Name of project is required parameter. i.e. pnpm @rtvision/create-mikro vite-mikro-repro'
 	);
 	process.exit(0);
