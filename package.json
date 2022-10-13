@@ -4,7 +4,7 @@
   "author": "Kalven Schraut <kalvens@rtvision.com>",
   "type": "module",
   "scripts": {
-    "publish": "pnpm publish --access=public"
+    "publish-pkg": "pnpm publish --access=public"
   },
   "bin": {
     "create-rtvision-mikro": "bin/create-mikro.js"
